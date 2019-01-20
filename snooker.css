@@ -1,0 +1,179 @@
+html{
+    background: linear-gradient(to right, rgba(0,0,0,0),rgba(0,0,0,100),rgba(0,0,0,100),rgba(0,0,0,100),rgba(0,0,0,0)), url("Set_of_Snooker_Balls.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-color: #f3f3f3;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.main-content{
+	padding: 55px;
+	font: bold 14px sans-serif;
+	text-align: center;
+}
+/*
+.main-content{
+	
+	height: 100vh;
+	/* background-image: linear-gradient(to right, rgba(0,0,0,0),rgba(0,0,0,100),rgba(0,0,0,100),rgba(0,0,0,100),rgba(0,0,0,0)); /*, url("Set_of_Snooker_Balls.jpg");
+	background-repeat: no-repeat;*/
+/*    box-sizing: border-box;
+    /* max-width: 475px; */
+/*    margin: 0 auto;
+    padding: 55px;
+
+    /* background-color:  #ffffff; */
+/*    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+    font: bold 14px sans-serif;
+    text-align: center;
+}*/
+
+.main-content .form-row{
+    /* text-align: left;
+    max-width: 315px; */ 
+    margin: 25px auto 0;
+}
+
+.main-content .form-title-row{
+    margin: 0 auto 40px;
+}
+
+.main-content h1{
+    display: inline-block;
+    box-sizing: border-box;
+    color: #4C565E;
+    font-size: 24px;
+    padding: 0 0 12px 0;
+    margin: 0;
+    border-bottom: 2px solid #6CAEE0;
+}
+
+.main-content .form-row > label{
+    display: inline-block;
+    box-sizing: border-box;
+    color:  #5f5f5f;
+    padding: 0 0 12px;
+}
+
+.main-content .form-row > label span{
+    display: block;
+    box-sizing: border-box;
+    color:  #5f5f5f;
+    padding: 0 0 12px;
+}
+
+.main-content input{
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 18px;
+    border: 1px solid #dbdbdb;
+}
+
+.main-content .form-row > label, .main-content .form-row > label input{
+    width: 150px;
+}
+
+.main-content .form-row > label input{
+	width: 130px;
+    margin: 0 0 24px;
+}
+
+.main-content input[type=radio],
+	margin: 0;
+	display: inline;
+    box-shadow: none;
+    width: auto;
+}
+
+.main-content select{
+    background-color: #ffffff;
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 18px;
+    border: 1px solid #dbdbdb;
+}
+
+.main-content .form-radio-buttons > div{
+	display: inline-block;
+    /*margin-bottom: 10px;*/
+	width: 113px
+}
+
+.main-content .form-radio-buttons label{
+	display: block;
+    margin: 0 0 8px 8px;
+	padding: 0 20px;
+    color:  #5f5f5f;
+    font-weight: normal;
+}
+
+.main-content .form-radio-buttons input[type=radio]{
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+}
+
+.main-content .form-radio-buttons input[type=number]{
+	width: 72px;
+	margin: 0 0 0 50px;
+}
+
+.main-content .form-radio-buttons img{
+	margin-left: 8px;
+}
+
+.main-content .form-radio-buttons label, .main-content .form-radio-buttons input, .main-content .form-radio-buttons img{
+	height: 40px;
+    display: flex;
+}
+
+.main-content .form-radio-buttons .red-ball-box {
+	/*width: 400px;
+	display: unset;*/
+}
+
+.disabled
+{
+    background-color: #DDD;
+    color: #999;
+}
+
+/*	Making the form responsive. Remove this media query
+    if you don't need the form to work on mobile devices. */
+
+@media (max-width: 370px) {
+	
+	.main-content .form-radio-buttons > div{
+		width: 150px;
+	}
+	
+	.main-content .form-radio-buttons label{
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	.main-content .form-radio-buttons input[type=number]{
+		width: 72px;
+		margin: 0 0 0 16px;
+	}
+
+/*
+    .main-content{
+        padding: 30px;
+    }
+
+    .main-content input{
+        width: 240px;
+    }
+
+}
+*/

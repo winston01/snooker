@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Snooker Frame Ball Calculator</title>
+
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<script src="snooker.js"></script>
+	<link rel="stylesheet" href="snooker.css">
+
+</head>
+
+<body>
+
+    <div class="main-content">
+
+        <!--form class="form-labels-on-top" method="post" action="#"-->
+
+            <div class="form-title-row">
+                <h1>Snooker Frame Ball Calculator</h1>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Points of Player 1</span>
+                    <input type="number" value="0" min="0" max="155" name="player1Points">
+					<span>Points to frame ball</span>
+					<span id="player1PointsToFrameBall"></span>
+                </label>
+				<label>
+                    <span>Points of Player 2</span>
+                    <input type="number" value="0" min="0" max="155" name="player2Points">
+					<span>Points to frame ball</span>
+					<span id="player2PointsToFrameBall"></span>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label><span>Highest value ball on the table</span></label>
+                <div class="form-radio-buttons">
+
+                    <div>
+                        <label class="red-ball-box">
+                            <input type="radio" name="radio" checked="checked" value="15">
+                            <img src="Snooker_ball_red.png">
+							<input type="number" value="15" min="0" max="15" name="redsOnTable">
+							<!--span>&nbsp;pcs</span-->
+                        </label>
+
+                        <label>
+                            <input type="radio" name="radio" value="2">
+                            <img src="Snooker_ball_yellow.png">
+                        </label>
+
+                        <label>
+                            <input type="radio" name="radio" value="3">
+                            <img src="Snooker_ball_green.png">
+                        </label>
+
+                        <label>
+                            <input type="radio" name="radio" value="4">
+                            <img src="Snooker_ball_brown.png">
+                        </label>
+                    </div>
+
+                    <div>
+
+                        <label>
+                            <input type="radio" name="radio" value="5">
+                            <img src="Snooker_ball_blue.png">
+                        </label>
+
+                        <label>
+                            <input type="radio" name="radio" value="6">
+                            <img src="Snooker_ball_pink.png">
+                        </label>
+
+                        <label>
+                            <input type="radio" name="radio" value="7">
+                            <img src="Snooker_ball_black.png">
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+        <!--/form-->
+
+    </div>
+
+</body>
+
+</html>
