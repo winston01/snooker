@@ -33,6 +33,8 @@ $(document).ready(function(){
 	$('input[type="number"]').change(function(){
 		calculateFrameBall();
 	});
+	
+	calculateFrameBall();
 });
 
 function calculateFrameBall() {
@@ -68,10 +70,10 @@ function calculateFrameBall() {
 }
 
 function getColoursOnTableValue() {
-	let lowestColour = Number($('input[name="radio"]:checked').val());
+	let lowestColourValue = Number($('input[name="radio"]:checked').val());
 	let coloursOnTableValue = 0;
 	
-	for (let i = 7; i >= lowestColour; i--) {
+	for (let i = 7; i >= lowestColourValue; i--) {
 		coloursOnTableValue += i;
 	}
 	
@@ -79,15 +81,15 @@ function getColoursOnTableValue() {
 }
 
 function getColoursShare(pointsToShare) {
-	let lowestColour = 2;
+	let lowestColourValue = 2;
 	if (!$('input[name="radio"]:checked').parent().hasClass("red-ball-box")) {
-		lowestColour = Number($('input[name="radio"]:checked').val());
+		lowestColourValue = Number($('input[name="radio"]:checked').val());
 	}
 
 	let coloursShare = [];
 	let coloursAdded = 0;
 
-	for (let i = lowestColour; i <= 7; i++) {
+	for (let i = lowestColourValue; i <= 7; i++) {
 		if (pointsToShare <= coloursAdded) {
 			break;
 		}
@@ -96,4 +98,18 @@ function getColoursShare(pointsToShare) {
 	}
 
 	return coloursShare;
+}
+
+function isPointsSetupValid() {
+	let isPointsSetupValid = false;
+
+	let player1Points = Number($('input[name="player1Points"]').val());
+	let player2Points = Number($('input[name="player2Points"]').val());
+	let lowestColour = Number($('input[name="radio"]:checked').val());
+	
+	if (lowestColour > 1 && (player1Points + player2Points >= 15)) {
+		isPointsSetupValid = true;
+	}
+
+	return isPointsSetupValid;
 }
